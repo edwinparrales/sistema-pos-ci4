@@ -7,4 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/personas','PersonController::index');
-$routes->get('/personas/:nombre','PersonController::buscarNombre/$1');
+$routes->get('/personas/(:any)','PersonController::buscarNombre/$1');

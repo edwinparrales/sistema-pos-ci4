@@ -22,9 +22,11 @@ class PersonController extends BaseController
       return  view("person_view",$data);
     }
 
-    public function buscarNombre(string $nombre)
+    public function buscarNombre($nombre)
     {
-
+        $req = $this->request->getGet('nombre');
+        print_r($req);
+        echo $nombre;
     }
 
 }
